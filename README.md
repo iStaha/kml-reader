@@ -1,17 +1,72 @@
-<<<<<<< HEAD
-# kml-reader
+KML File Viewer
+
 This is a React-based application built using Vite and Material-UI. The app allows users to upload a KML file, parse its contents, display a summary and detailed analysis, and render the elements on a map.
-=======
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
 
-Currently, two official plugins are available:
+Upload and parse KML files
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Display a summary of different element types
 
-## Expanding the ESLint configuration
+Show detailed information about line-based elements
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 5f941a0 (Initial commit)
+Render KML elements on an interactive map using Leaflet
+
+🛠 Tech Stack
+
+Frontend: React (Vite), Material-UI
+
+Mapping: Leaflet.js
+
+Testing: Vitest, React Testing Library
+
+📂 Folder Structure
+
+├── src
+│   ├── components
+│   │   ├── FileUploader.jsx
+│   │   ├── SummaryTable.jsx
+│   │   ├── DetailedTable.jsx
+│   │   ├── MapComponent.jsx
+│   ├── tests
+│   │   ├── FileUploader.test.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── styles.css
+├── public
+│   ├── index.html
+├── package.json
+├── vite.config.js
+├── README.md
+
+📦 Installation
+
+Clone the repository:
+
+git clone https://github.com/your-username/kml-file-viewer.git
+cd kml-file-viewer
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+✅ Running Tests
+
+Run unit tests with Vitest:
+
+npx vitest
+
+🚀 Build for Production
+
+To create a production build:
+
+npm run build
+
+📝 License
+
+This project is licensed under the MIT License.
+
