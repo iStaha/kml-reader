@@ -1,72 +1,53 @@
-KML File Viewer
+# KML Reader 📍
 
-This is a React-based application built using Vite and Material-UI. The app allows users to upload a KML file, parse its contents, display a summary and detailed analysis, and render the elements on a map.
+## Overview
+This is a simple React application that allows users to **upload and visualize KML files** on a map. The app provides **summary and detailed insights** about the elements in the KML file.
 
-🚀 Features
+## Features ✨
+- **Upload KML File** 📂  
+- **View Summary** 📝 (Count of different element types)  
+- **View Details** 📊 (Element type and total length for LineStrings)  
+- **Map Integration** 🗺️ (Displays parsed KML elements on a map)  
 
-Upload and parse KML files
+## Tech Stack 🛠️
+- **React + Vite**
+- **Material UI** (For styling)
+- **Leaflet.js** (For map rendering)
+- **@mapbox/togeojson** (For KML to GeoJSON conversion)
+- **Vitest** (For testing)
 
-Display a summary of different element types
-
-Show detailed information about line-based elements
-
-Render KML elements on an interactive map using Leaflet
-
-🛠 Tech Stack
-
-Frontend: React (Vite), Material-UI
-
-Mapping: Leaflet.js
-
-Testing: Vitest, React Testing Library
-
-📂 Folder Structure
-
-├── src
-│   ├── components
-│   │   ├── FileUploader.jsx
-│   │   ├── SummaryTable.jsx
-│   │   ├── DetailedTable.jsx
-│   │   ├── MapComponent.jsx
-│   ├── tests
-│   │   ├── FileUploader.test.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   ├── styles.css
-├── public
-│   ├── index.html
-├── package.json
-├── vite.config.js
-├── README.md
-
-📦 Installation
-
-Clone the repository:
-
-git clone https://github.com/your-username/kml-file-viewer.git
-cd kml-file-viewer
-
-Install dependencies:
+## Installation 🏗️
+1️⃣ Clone the repository  
+```sh
+git clone https://github.com/iStaha/kml-reader.git
+cd kml-reader
 
 npm install
-
-Start the development server:
-
 npm run dev
 
-✅ Running Tests
 
-Run unit tests with Vitest:
+📦 kml-reader
+ ┣ 📂 src
+ ┃ ┣ 📂 components
+ ┃ ┃ ┣ 📜 FileUploader.jsx
+ ┃ ┃ ┣ 📜 SummaryTable.jsx
+ ┃ ┃ ┣ 📜 DetailedTable.jsx
+ ┃ ┃ ┣ 📜 MapComponent.jsx
+ ┃ ┣ 📂 tests
+ ┃ ┃ ┣ 📜 FileUploader.test.jsx
+ ┃ ┣ 📜 App.jsx
+ ┃ ┣ 📜 main.jsx
+ ┣ 📜 package.json
+ ┣ 📜 README.md
+ ┣ 📜 vite.config.js
 
-npx vitest
 
-🚀 Build for Production
+Contributing 🤝
+If you'd like to contribute:
 
-To create a production build:
-
-npm run build
-
-📝 License
-
-This project is licensed under the MIT License.
-
+Fork the repository 🍴
+Create a new branch
+Commit your changes 🔥
+Push and submit a Pull Request ✅
+License 📝
+This project is open-source and free to use.
